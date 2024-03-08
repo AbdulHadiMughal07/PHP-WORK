@@ -41,6 +41,16 @@ for($i=1; $i<=10; $i++)
         echo "<br> This Is Do While Loop ! " .$file;
         $file++;
     }while($file<=93);
+
+    // Even & Odd
+    for($myNumber=0; $myNumber<=50; $myNumber++){
+        if($myNumber%2==0){
+            echo "<br> This Number Is Even" .$myNumber;
+        }
+        else{
+            echo "This Number Is Odd" .$myNumber;
+        }
+    }
     
 
 ?>
