@@ -21,7 +21,7 @@ for($i=1; $i<=10; $i++)
     echo "<br>";
     for($e=0; $e<=10; $e++){
         for($n=0; $n<=$e; $n++){
-            echo "✔";
+            echo "*";
         }
         echo "<br>";
     };
