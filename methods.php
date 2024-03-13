@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +6,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             background: black;
             color: white;
         }
+
+        #adm-form{
+            background-color: cyan;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #mq{
+            font-size: 25px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <marquee behavior="" direction="" id="mq">Admission Form</marquee>
+    <h2 id="adm-form">Admission Form</h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
