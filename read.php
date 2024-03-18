@@ -2,7 +2,7 @@
 
 include("config/connection.php");
 
-$sql = "select * from user_data";
+$sql = "select * from employee";
 $result = $conn->query($sql);
 
 
