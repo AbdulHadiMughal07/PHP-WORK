@@ -1,6 +1,6 @@
 <?php
 
-include("config/connection.php");
+include("config/one.php");
 
 $sql = "select * from users";
 
@@ -21,6 +21,10 @@ $result = mysqli_query($conn , $sql);
             color: while;
             
         }
+
+        table{
+            box-shadow: 2px 2px 3px 3px solid cyan;
+        }
     </style>
 </head>
 <body>
@@ -36,22 +40,21 @@ $result = mysqli_query($conn , $sql);
         </tr>
 
         <?php
-        while($rows = mysqli_fetch_assoc($result)){
-            echo "<tr>
-            <td>".$rows['id']."</td>
-            <td>".$rows['name']."</td>
-            <td>".$rows['email']."</td>
-            <td>".$rows['password']."</td>
-            <td><a href = 'create_update.php?idd = ".$rows['id']."' class='btn btn-success'>Edit</a></td>
 
-            <td><a href = 'create_delete.php?idd = ".$rows['id']."'class='btn btn-danger'>Delete</a></td>
-            
-            
-            </tr>";
-        }
+            while($rows = mysqli_fetch_assoc($result)){
+                echo "<tr>
 
+                <td>".$rows['id']."</td>
+                <td>".$rows['name']."</td>
+                <td>".$rows['email']."</td>
+                <td>".$rows['password']."</td>
+                <td><a href='create_update.php?id=".$rows['id']."' class= 'btn btn-success'>Edit</a></td>
+                <td><a href='create_delete.php?id=".$rows['id']."' class= 'btn btn-danger'>Delete</a></td>
+                </tr>";
+            }
 
         ?>
+        
     </table>
     </div>
 </body>

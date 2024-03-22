@@ -1,6 +1,6 @@
 <?php
 
-    include("config/connection.php");
+    include("config/one.php");
 
     if(isset($_POST['submit'])){
         $username = $_POST['username'];
