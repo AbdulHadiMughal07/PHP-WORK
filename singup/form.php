@@ -21,7 +21,7 @@
                     echo "<br> Login Successful";
                     echo "<script>setTimeout(function(){
                         window.location.href='login.php'
-                    },4000)<script>";
+                    },4000)</script>";
                 }
             }else{
                 echo "<br> Login Failed!";
