@@ -39,13 +39,24 @@
                             Dropdown
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            
+                            <?php 
+
+                            $sql = "SELECT * FROM `category`";
+                            $result = mysqli_query($conn , $sql);
+
+                            while($opt = mysqli_fetch_assoc($result)){
+                                ?>
+                                <li><a class="dropdown-item" href='category.php?id=<?php echo $opt['id']?>'><?php
+                                echo $opt['name']
+                                ?></a></li>
+                            <?php } ?>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
 
 
